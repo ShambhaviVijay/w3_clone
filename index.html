@@ -1,52 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W3 Clone</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
 </head>
+
 <body>
     <div class="container">
-                <div class="logo">
-                    <img src="assets/logo.png" alt="W3 School">
+        <div class="logo">
+            <img src="assets/logo.png" alt="W3 School">
+        </div>
+        <div class="navbar">
+            <nav>
+                <ul class="first">
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">Excercise</a></li>
+                    <li><a href="#">Certificates</a></li>
+                    <li><a href="#">Services</a></li>
+                    <button class="search-button">Search...</button>
+                    <span class="sing-log">
+                    <button class="signin-btn">SIGNIN</button>
+                    <button class="signin-btn login-btn">LOGIN</button></span>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="nav-secondary">
+        <nav>
+            <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">Python</a></li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">Python</a></li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JSON</a></li>
+                <li><a href="#">Python</a></li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">Python</a></li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">Python</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="section-2">
+        <h1 class="font">HTML TUTORIALS</h1>
+        <div class="btn">
+            <button class="primary-btn left"> HOME</button>
+            <button class="primary-btn right">NEXT</button>
+        </div>
+    </div>
+
+    <section class="intro font">
+        <p>
+            <span class="text"> HTML is the standard markup language for Web pages.</span> <br>
+            <span class="text">With HTML you can create your own Website. </span> <br>
+            <span class="text"> HTML is easy to learn - You will enjoy it! </span> <br>
+        </p>
+        <button class="primary-btn tutorial text">Study our free HTML tutorial</button>
+    </section>
+    <section class="section-3">
+        <h1 class="font" style="font-size: 27px;">Easy Learning with HTML "Try it Yourself"</h1>
+        <h3 class="font" style="font-size: 17px;">With our "Try it Yourself" editor, you can edit the HTML code and view
+            the result:</h3>
+        <div class="code-highlighter intro">
+            <h2 class="font">Example</h2>
+            <!-- to enter the html code -->
+            <div class="demo-space">
+                <div class="box code" id="codeContent">
+                    <textarea id="editor" class="codearea" >
+                      <!DOCTYPE html>
+                      <html lang="en">
+                      <head>
+                        <title>Document</title>
+                      </head>
+                      <body>
+                        <h1>Hello, World!</h1>
+                      </body>
+                      </html>
+                    </textarea>
                 </div>
-                <div class="navbar">
-                    <nav>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </nav></div>
+                <!-- for the output to be rendered -->
+                <div class="box output"></div>
                 </div>
-                <div class="nav-secondary">
-                    <nav>
-                    <ul>
-                        <li><a href="#">HTML</a></li>
-                        <li><a href="#">CSS</a></li>
-                        <li><a href="#">JavaScript</a></li>
-                        <li><a href="#">Python</a></li>
-                        <li><a href="#">HTML</a></li>
-                        <li><a href="#">CSS</a></li>
-                        <li><a href="#">JavaScript</a></li>
-                        <li><a href="#">Python</a></li>
-                        <li><a href="#">HTML</a></li>
-                        <li><a href="#">CSS</a></li>
-                        <li><a href="#">JavaScript</a></li>
-                        <li><a href="#">Python</a></li>
-                        <li><a href="#">CSS</a></li>
-                        <li><a href="#">JavaScript</a></li>
-                        <li><a href="#">Python</a></li>
-                        <li><a href="#">HTML</a></li>
-                        <li><a href="#">CSS</a></li>
-                        <li><a href="#">JavaScript</a></li>
-                        <li><a href="#">Python</a></li>
-                        <li><a href="#">CSS</a></li>
-                      
-                    </ul>
-                   </nav>
-                </div>
+
+                <script>
+                 var textarea = document.getElementById('editor');
+textarea.value = textarea.value.replace(/^\s+/gm, '');
+                    function runDemo() {
+                        var htmlCode = document.getElementById('editor').value;
+                        document.getElementsByClassName('output')[0].innerHTML = htmlCode;
+                    }
+                </script>
+                <button class="primary-btn demo-runner " onclick="runDemo()">Try it yourself >></button>
+
 </body>
+
 </html>

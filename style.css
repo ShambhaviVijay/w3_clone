@@ -5,6 +5,13 @@
   font-family: sans-serif;
 }
 
+.font {
+  font-family: sans-serif;
+  font-weight: 100;
+  font-weight: 25px;
+  margin: 30px;
+}
+
 .navbar ul {
   display: flex;
   justify-content: space-evenly;
@@ -23,6 +30,9 @@ a:hover {
   line-height: 100%;
   color: white;
 }
+.first li {
+  margin-top: 1.3vh;
+}
 li {
   list-style-type: none;
 }
@@ -31,35 +41,165 @@ body {
   padding: 0;
 }
 img {
-    max-height: 6vh;
+  max-height: 6vh;
 }
 .logo {
-    display: flex;
-    align-items: left;
-    justify-content: center;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  margin-top: 1.4vh;
+  margin-left: 0.2vh;
 }
-
+.btn {
+  margin: 3vh;
+}
 .nav-secondary {
   background-color: rgb(21, 21, 21);
   height: 5vh;
   color: white;
-  font-family:  sans-serif;
+  font-family: sans-serif;
 }
 .nav-secondary a {
   color: rgb(243, 243, 243);
   display: flex;
   justify-content: left;
   margin: 5px;
-
 }
 .nav-secondary a:hover {
   color: white;
-background-color:rgb(4, 170, 109) ;
-
+  background-color: rgb(4, 170, 109);
 }
 .nav-secondary ul {
   margin: 0;
-padding: 0;
-display: flex;
-align-items: left;
+  padding: 0;
+  display: flex;
+  align-items: left;
+}
+.primary-btn {
+  height: 45px;
+  width: 90px;
+  background-color: rgb(4, 170, 109);
+  border: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 5px;
+}
+.left {
+  float: left;
+  margin: 0 3vh;
+}
+.right {
+  float: right;
+  margin: 0 5vh;
+}
+.section-2 {
+  display: flex;
+  flex-direction: column;
+}
+.text {
+  margin-left: 5vh;
+}
+.intro {
+  height: 33vh;
+  margin: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  background-color: #d9eee1;
+}
+.search-button {
+  width: 20vh;
+  height: 4.7vh;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 30px;
+  font-style: italic;
+  color: gray;
+  text-align: left;
+  font-size: 15px;
+}
+
+p {
+  line-height: 2.8;
+}
+.tutorial {
+  width: 40vh;
+  font: 1000;
+  font-size: 20px;
+}
+.section-3 {
+  max-height: 58vh;
+}
+.code-highlighter {
+  height: 48vh;
+  margin: auto;
+  border-radius: 5px;
+  justify-content: left;
+  background-color: rgb(231, 233, 235);
+}
+.demo-space {
+  background-color: white;
+  height: 32vh;
+  width: 98%;
+  margin-top: -2vh;
+  margin-left: 1.8vh;
+  display: flex;
+}
+.demo-runner {
+  width: 20vh;
+  margin: 1vh 1.8vh;
+  font: 1000;
+  font-size: 15px;
+}
+.tutorial:hover,
+.demo-runner:hover,
+.primary-btn:hover {
+  background-color: rgb(5, 152, 98);
+}
+.box {
+  height: 100%;
+  margin: 1vh;
+  width: 50%;
+}
+.code {
+  border-right: 5px solid rgb(231, 233, 235);
+  height: 100%;
+  color: black;
+}
+.codearea {
+  height: 90%;
+  text-align: left;
+  width: 100%;
+  border: none;
+  box-sizing: border-box;
+  overflow: auto;
+  resize: none;
+}
+
+.codearea:focus {
+  outline: none;
+}
+#editor {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signin-btn {
+  background-color: rgb(5, 152, 98);
+  color: white;
+  border-radius: 30px;
+  border: none;
+  width: 10vh;
+  height: 4.7vh;
+}
+.sign-log{
+  float: right;
+
+}
+.login{
+  width: 13;
+  background-color:rgb(130, 223, 189) ;
 }
